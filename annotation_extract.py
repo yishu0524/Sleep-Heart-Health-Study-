@@ -7,12 +7,13 @@ import os
 from xml.etree import ElementTree
 #local
 #profusion_dir=r'C:\Users\ASUS\Documents\school\SleepHeartHealthStudy'
+#csv_dir=r'C:\Users\ASUS\Documents\school\SleepHeartHealthStudy'
 csv_dir = '../../../../datacommons/plusds/sleep/shhs/shhs/documentation/datasets'
 profusion_dir = '../../../../datacommons/plusds/sleep/shhs/shhs/polysomnography/annotations-events-profusion'
-csv_file = os.path.join(csv_dir, 'shhs-dataset-0.13.0.csv')
+csv_file = os.path.join(csv_dir, 'shhs1-dataset-0.13.0.csv')
 patients = pd.read_csv(csv_file)
 patient_ids = patients['nsrrid']
-patient_id = patient_ids[0]
+patient_id = patient_ids[4841]
 study='shhs1'
 def annotations_extract(study, patient_id):
     profusion_file = os.path.join(profusion_dir, study+'-'+str(patient_id)+'-profusion'+'.xml')
