@@ -8,7 +8,7 @@ from xml.etree import ElementTree
 #local
 #profusion_dir=r'C:\Users\ASUS\Documents\school\SleepHeartHealthStudy'
 #csv_dir=r'C:\Users\ASUS\Documents\school\SleepHeartHealthStudy'
-csv_dir = '../../../../datacommons/plusds/sleep/shhs/shhs/documentation/datasets'
+csv_dir = '../../../../datacommons/plusds/sleep/shhs/shhs/datasets'
 profusion_dir = '../../../../datacommons/plusds/sleep/shhs/shhs/polysomnography/annotations-events-profusion'
 csv_file = os.path.join(csv_dir, 'shhs1-dataset-0.13.0.csv')
 patients = pd.read_csv(csv_file)
